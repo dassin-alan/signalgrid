@@ -1,0 +1,61 @@
+{
+  "submissionId": "claude-code-dsv4pro",
+  "projectName": "SignalGrid",
+  "description": "Multi-Agent Urban Emergency Dispatch Simulator",
+  "model": "Claude Code DeepSeek-V4-Pro",
+  "timestamp": "2026-07-19T00:00:00.000Z",
+  "features": {
+    "mapEditor": true,
+    "astarPathfinding": true,
+    "weightedTerrain": true,
+    "globalAssignment": true,
+    "hungarianAlgorithm": true,
+    "tickSimulation": true,
+    "collisionAvoidance": true,
+    "vertexConflictDetection": true,
+    "edgeSwapDetection": true,
+    "stationaryBlocker": true,
+    "chainDependency": true,
+    "waitingState": true,
+    "replanning": true,
+    "dynamicMapUpdate": true,
+    "jsonValidation": true,
+    "undoRedo": true,
+    "importExport": true,
+    "seededRandom": true,
+    "challengeScenarios": true,
+    "eventLog": true,
+    "realTimeMetrics": true
+  },
+  "challengeScenarios": [
+    "Weighted Detour",
+    "Assignment Trap",
+    "Head-On Corridor",
+    "Stationary Blocker",
+    "Dynamic Block",
+    "Dynamic Cost Improvement",
+    "Multi-Wave Dispatch",
+    "Unreachable Incident"
+  ],
+  "coreExports": [
+    "findWeightedPath",
+    "assignIncidentsGlobally",
+    "createSimulationState",
+    "advanceSimulationTick",
+    "detectActualConflicts",
+    "applyMapChangeToSimulation",
+    "validateSceneFile",
+    "selectSimulationMetrics",
+    "createSeededScenario"
+  ],
+  "tests": {
+    "unit": "vitest",
+    "e2e": "playwright"
+  },
+  "techStack": {
+    "framework": "React 18",
+    "language": "TypeScript 5",
+    "bundler": "Vite 5",
+    "testing": "Vitest 1.6, Playwright 1.45"
+  }
+}
